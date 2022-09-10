@@ -535,10 +535,12 @@ void Dmp_type( int cnt, unsigned_32 *offs )
                 Wdputslc( "CONST_LONG\n" );
                 enum_const( buff, 4 );
                 break;
+#if 0 // FIXME: Don't know how to handle CONST_LONG_I64
             case CONST_LONG_I64:
                 Wdputslc( "CONST_LONG_I64\n" );
                 enum_const( buff, 8 );
                 break;
+#endif
             case FLIST:
                 StartType( "FIELD_LIST", ++curr_index);
                 Wdputs( "          number of fields = " );

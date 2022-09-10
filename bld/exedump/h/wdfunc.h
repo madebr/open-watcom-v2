@@ -96,6 +96,7 @@ extern unsigned Lookup_section_name( const char * );
  */
 extern void Dump_section( void );
 extern void Dump_local_name( unsigned_8 *data, unsigned_8 *start );
+extern void Get_local_name( char *name, unsigned_8 *data, unsigned_8 *start );
 extern unsigned_8 *Get_type_index( unsigned_8 *, unsigned_16 * );
 extern unsigned_8 *Dump_location_expression( unsigned_8 *, char * );
 
